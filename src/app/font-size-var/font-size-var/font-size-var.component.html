@@ -1,0 +1,4 @@
+<!--利用範本參考變數使用子元件屬性與方法-->
+<button type="button" [disabled]="size === 16" (click)="onSetFontSize(1)">增加 1pt</button>
+<button type="button" [disabled]="size === 10" (click)="onSetFontSize(-1)">減少 1pt</button>
+<span>FontComponent 紀錄的尺寸值: {{size}}</span>

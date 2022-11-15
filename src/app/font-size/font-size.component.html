@@ -1,0 +1,3 @@
+<p [style]="{fontSize: size + 'px'}">目前文字大小{{size}}</p>
+<button type="button" (click)="onSetFontSize(1)" [disabled]="size === '16'">增加 1pt</button>
+<button type="button" (click)="onSetFontSize(-1)" [disabled]="size === '10'">減少 1pt</button>

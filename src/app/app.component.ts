@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo';
+  name = "Angular";
+  purchaseCount = 10;
+  unitPrice = 200;
+  fontSize = 16;
+  fontColor = "#F12";
+  fontSizeType = 'small';
+
+  onSetFontSize(value: number) : void {
+    this.fontSize += value;
+  }
+
+  onSizeChange(size:number) : void {
+    console.log(size);
+    this.fontSize = size;
+  }
+
+  get fontClass () : string {
+    return `${this.fontSizeType}-font`;
+  }
 }
